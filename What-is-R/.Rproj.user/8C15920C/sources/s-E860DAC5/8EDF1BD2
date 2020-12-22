@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1608673740784.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "693905327",
+    "id" : "8EDF1BD2",
+    "lastKnownWriteTime" : 1608673853,
+    "last_content_update" : 1608673853028,
+    "path" : "~/GitHub/CorrelAidXKonstanz-Education/What-is-R/script.R",
+    "project_path" : "script.R",
+    "properties" : {
+        "cursorPosition" : "7,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
