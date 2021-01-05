@@ -1,8 +1,21 @@
-#########################
-# CorrelAid x Konstanz  #
-#                       #
-# What is R?            #
-#########################
+## ---------------------------
+##
+## Script name: CorrelAid-X_Konstanz_Education
+##
+## Purpose of script: Script to show basic usage of R
+##
+## Author: Philipp Bosch & Tilman Kerl
+##
+## Date Created: 2021-01-05
+##
+## Email: konstanz@correlaid.de
+##
+## ---------------------------
+##
+## Notes:
+##   
+##
+## ---------------------------
 
 
 
