@@ -76,3 +76,14 @@ logicals <- c(TRUE, TRUE, FALSE, FALSE)
 # Was passiert wenn wir die Typen mischen? --------------------------------
 
 
+
+
+
+# Operationen mit Vektoren ----------------------------------------------------
+
+
+
+
+# The real shit - Funktionen ----------------------------------------------
+
+
