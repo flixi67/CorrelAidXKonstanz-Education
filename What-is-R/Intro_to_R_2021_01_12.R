@@ -124,7 +124,7 @@ median(integers)
 sum(integers) # summiere alle elemente aus integers
 wurzel <- sqrt(35) # berechne die wurzel von 35
 
-length(intgers) # gib die länge des vectors zurück (die anzahl der Elemente)
+length(integers) # gib die länge des vectors zurück (die anzahl der Elemente)
 
 
 vector1 <- c(1:10)
