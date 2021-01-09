@@ -97,7 +97,24 @@ sentences <- c(characters, more_characters) # Die Logik von 'c()' bleibt gleich!
 
 # Aufspüren von Objekten in Vektoren --------------------------------------
 
-more_characters[]
+more_characters[1] # Gibt erstes Element des Vektors
+
+weird_something_2[3] # Gibt drittes Element des Vektors
+
+
+
+# Spice it up - Listen ----------------------------------------------------
+
+# Vektoren sind etwas eintönig und unflexibel - Listen to the rescue
+
+my_list <- list("This", "is", "a", "list", 5, 7, TRUE) # mischen von Typen möglich
+
+my_number_list <- list(integers, numerics) # zusammenführen von Vektoren möglich
+
+# Finden von Elementen ist (fast) analog zu Vektoren
+
+my_list[1]
+my_list[[1]]
 
 # The real shit - Funktionen ----------------------------------------------
 # Eine Funktion in R kann man sich mit einer Funktion aus Mathe vorstellen,
