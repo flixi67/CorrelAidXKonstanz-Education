@@ -190,8 +190,8 @@ vanhanen(60, 40)
 
 
 # Eigene Funktionen - advanced 2 -----------------------------------------------
+# wir können es auch komplizierter machen, auch wenn nicht sinnvoll
 
-#
 round(mean(add(vanhanen(60, 40), vanhanen(80, 60)))*99.99, digits = 2)
 
 # für mehr übersicht können wir es auch in mehrere Zeilen schreiben
@@ -210,6 +210,3 @@ round(
 # (1)
 # Definiere einen Vektor mit 5 Integeres
 # Schreibe eine Funktion, die das letzte Element zurückgibt
-
-
-
