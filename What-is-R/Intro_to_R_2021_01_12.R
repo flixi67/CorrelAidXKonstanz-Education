@@ -178,7 +178,7 @@ add("hey ", "du") # das hier auch
 # Eigene Funktionen - advanced 1 -----------------------------------------------
 
 # Vanhanen's Polyarchy Dataset
-vanhanen <- function(vote_share, participation, pop = pulation) {
+vanhanen <- function(vote_share, participation, population) {
   absolte_voters <- participation * population
   P <- absolte_voters/population * 100
   C <- 100 - vote_share
