@@ -34,4 +34,22 @@ dir("data")  # die Funktion dir() nimmt einen relativen Pfad, der auf dem aktuel
               # um reproduzierbare Skripte zu produzieren, sollte man auf absolute Pfade verzichten
 read.csv("data/integers.csv") # wir können den geschriebenen file auch wieder einlesen
 
-# 
+# packages - mehr Funktionalität --------------------------------------------
+# install.packages("readr") # Installieren von R packages über einen Befehl, besser aber unter Tools -> Install packages
+library(readr) # packages muss man in jeder Sitzung neu laden, am besten zu Beginn des Skripts
+?readr::read_csv() # das package "readr" bietet erweiterte funktionen zum laden/schreiben von Daten
+
+# tidyverse - abgestimmtes set an packages ----------------------------------
+# install.packages("tidyverse") # läd eine Anzahl an packages, die alle aufeinander abgestimmt sind
+library(tidyverse)
+
+
+# der Pipe Operator %>% ------------------------------------------------------
+
+# Laden von unseren Daten (opendata Konstanz) ---------------------------------
+
+# Überblick und Datenmanipulation ---------------------------------------------
+
+# Joinen der Datensätze -------------------------------------------------------
+
+# Regressionen mit dem broom package ------------------------------------------
