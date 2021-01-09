@@ -29,8 +29,9 @@ dir()   # zeigt Dateien im Verzeichnis
 dir.create(paste0(getwd(), "/data")) # Unterordner "data" erstellen
 write.csv(my_number_list, file = "data/numbers.csv") # das Objekt "integers" als Datei exportieren
 
-dir("/data")  # die Funktion dir() nimmt einen relativen Pfad, der auf dem aktuellen Arbeitsverzeichnis aufbaut
+dir("data")  # die Funktion dir() nimmt einen relativen Pfad, der auf dem aktuellen Arbeitsverzeichnis aufbaut
               # dadurch ist es unabhängig vom Computer, auf dem man es ausführt
               # um reproduzierbare Skripte zu produzieren, sollte man auf absolute Pfade verzichten
+read.csv("data/integers.csv") # wir können den geschriebenen file auch wieder einlesen
 
 # 
