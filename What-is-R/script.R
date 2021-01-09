@@ -13,7 +13,7 @@
 ## ---------------------------
 ##
 ## Notes:
-##   
+##
 ##
 ## ---------------------------
 
@@ -85,5 +85,77 @@ logicals <- c(TRUE, TRUE, FALSE, FALSE)
 
 
 # The real shit - Funktionen ----------------------------------------------
+# Eine Funktion in R kann man sich mit einer Funktion aus Mathe vorstellen,
+
+mean(integers) # berechne den mean der werte, die in der variable integers gespeichert ist
+median(integers)
+sum(integers) # summiere alle elemente aus integers
+wurzel <- sqrt(35) # berechne die wurzel von 35
+
+round(wurzel, digits = 1)
+# es sind auch verschachtelungen von funktionen möglich:
+round(sqrt(35), digits = 1) # ist das selbe wie 2 Zeilen weiter oben
+
+wuerfel <- c(1:6)
+sample(wuerfel) # ändert die reihenfolge der elemente im würfel
+# damit die änderungen aber auch persitent sind müssen wir das ergebnis wieder in der wuerfel varibale speichern:
+wuerfel <- sample(wuerfel)
+wuerfel
+
+# wenn wir nur eine zufällige Zahl aus unserem Würfel haben wollen können wir den parameter size mit dem wert 1 hinzufügen
+sample(wuerfel, size = 1)
+
+# was genau es alles für funktionen gibt & was für parameter die haben findet ihr
+# über eine google suche oder die dokumentation der funktionen heraus. Ansonsten geht auch:
+?sample # gibt die dokumentation der funktion im help-screen aus
 
 
+# Eigene Funktionen - Wie & Warum --------------------------------------------
+
+# Eigene Funktionen sind sinnvoll für für spezielle Probleme und repetitive Aufgaben
+# Wir können unsere eigene simple Additions-funktion definieren:
+
+add <- function(a,b) {  # das hier ist der Kopf der Funktion, "add" ist der name, mit dem wir die fkt. später aufrufen können
+                        # in den klammern von function() können wir parameter bestimmen, für die addition brauchen wir 2, die können wir nennen wie wir wollen
+  return(a+b)           # alles zwischen den Klammern wird der Rumpf genannt,
+                        # mit dem return() geben wir das ergbenis der berechnung zurück um es später wiederverwenden zu können
+}
+
+# jetzt können wir die funktion aufrufen (benutzen) indem wir add(a,b) mit a,b integers/numerics
+add(1,2)
+add(13, 8)
+add(200, -10)
+add(-200, -10)
+add(-200, 10)
+add("hey ", 2) # das wird einen Fehler werfen
+add("hey ", "du") # das hier auch
+
+
+# Eigene Funktionen - advanced 1 -----------------------------------------------
+
+# Vanhanen's Polyarchy Dataset
+vanhanen <- function(vote_share, participation) {
+  contestation <- 100 - vote_share
+  final_index <- (contestation * participation)/100
+  return(final_index)
+}
+
+# TODO: sinvolle werte
+# Jetzt können wir einfach den index berechnen ohne immer alles zu tippen, es reicht:
+vanhanen(60, 40)
+
+
+# Eigene Funktionen - advanced 2 -----------------------------------------------
+
+#
+round(mean(add(vanhanen(60, 40), vanhanen(80, 60)))*99.99, digits = 2)
+
+# für mehr übersicht können wir es auch in mehrere Zeilen schreiben
+round(
+  mean(
+    add(
+      vanhanen(60, 40),
+      vanhanen(80, 60))
+    )
+  *99.99,
+  digits = 2)
