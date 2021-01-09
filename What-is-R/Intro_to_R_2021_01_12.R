@@ -124,6 +124,18 @@ median(integers)
 sum(integers) # summiere alle elemente aus integers
 wurzel <- sqrt(35) # berechne die wurzel von 35
 
+length(intgers) # gib die länge des vectors zurück (die anzahl der Elemente)
+
+
+vector1 <- c(1:10)
+vector2 <- c(1:10)
+cor(vector1, vector2) # berechne die correlation zweier vektoren
+
+# es geht schwieriger
+vector1 <- c(12,42,132,5312,43,212,23,32,123)
+vector2 <- c(46,123,365,213,59,3421,73,134,7)
+cor(vector1, vector2)
+
 round(wurzel, digits = 1)
 # es sind auch verschachtelungen von funktionen möglich:
 round(sqrt(35), digits = 1) # ist das selbe wie 2 Zeilen weiter oben
@@ -191,3 +203,16 @@ round(
     )
   *99.99,
   digits = 2)
+
+
+# Aufgaben zum Üben --------------------------------------------------------------
+
+# (1)
+# Definiere einen Vektor mit 5 Integeres
+# Schreibe eine Funktion, die das letzte Element zurückgibt
+
+
+
+
+
+# (2)
