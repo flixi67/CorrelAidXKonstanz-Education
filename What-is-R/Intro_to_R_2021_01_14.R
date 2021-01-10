@@ -40,16 +40,31 @@ library(readr) # packages muss man in jeder Sitzung neu laden, am besten zu Begi
 ?readr::read_csv() # das package "readr" bietet erweiterte funktionen zum laden/schreiben von Daten
 
 # tidyverse - abgestimmtes set an packages ----------------------------------
-# install.packages("tidyverse") # läd eine Anzahl an packages, die alle aufeinander abgestimmt sind
-library(tidyverse)
+install.packages("tidyverse") # installiert eine Anzahl an packages, die alle aufeinander abgestimmt sind
+library(tidyverse) # laden der einzelnen packages
 
 
-# der Pipe Operator %>% ------------------------------------------------------
+# Laden von Daten ---------------------------------------------------------
+# Daten können in allen möglichen Formaten abgespeichert werden. Viele Datensätze
+# stammen auch heutzutage noch aus Excel-Tabellen. Ein Format mit dem sowohl Excel
+# als auch R gut arbeiten können ist .csv (comma-seperated values)
 
-# Laden von unseren Daten (opendata Konstanz) ---------------------------------
+readr::read_csv()
 
-# Überblick und Datenmanipulation ---------------------------------------------
 
-# Joinen der Datensätze -------------------------------------------------------
+# dplyr - select ----------------------------------------------------------
 
-# Regressionen mit dem broom package ------------------------------------------
+
+# dplyr filter ------------------------------------------------------------
+
+
+
+# der Pipe Operator %>% ---------------------------------------------------
+
+
+# Joinen der Datensätze ---------------------------------------------------
+
+
+
+
+# Regressionen mit dem broom package --------------------------------------
