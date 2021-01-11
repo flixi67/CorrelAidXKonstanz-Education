@@ -155,8 +155,8 @@ clean_vote_konstanz_2016 %>%
 # Beachte: Ohne Zuweisung wieder kein speichern der neuen Variablen!
 
 clean_vote_konstanz_2016 <- clean_vote_konstanz_2016 %>% 
-  mutate(vote_percentage = `Wahlbeteiligung in Prozent` / 10) %>% 
-  select(-`Wahlbeteiligung in Prozent`)
+                              mutate(vote_percentage = `Wahlbeteiligung in Prozent` / 10) %>% 
+                              select(-`Wahlbeteiligung in Prozent`)
 
 
 # case_when kann sehr nützlich sein, wenn man Aufgrund von verschiedenen Konditionen
@@ -177,7 +177,10 @@ clean_vote_konstanz_2016 %>%
 # Stimmenanteile gegeben haben, sondern nur Absolute Anzahl der Stimmen im Wahlbezirk pro Partei
 # mutate to the rescue!
 
-
+clean_vote_konstanz_2016 <- clean_vote_konstanz_2016 %>% 
+                              mutate(percentage_cdu = (100/`gültige Stimmen insgesamt`) * D1_CDU,
+                                    percentage_greens = (100/`gültige Stimmen insgesamt`) * D2_GRÜNE,
+                                    percentage_afd = (100/`gültige Stimmen insgesamt`) * D15_AfD)
 
 
 
@@ -186,19 +189,93 @@ clean_vote_konstanz_2016 %>%
 # oftmals möchten wir Analysen für bestimme Subgruppen durchführen. Dabei hilft uns
 # group_by
 # kombinieren wir group_by mit summarise() erhalten wir einen neuen aggregierten Datensatz
-# Hier erhalten wir die Anzahl der Wahlbezirke pro Stadtteil und den Mittelwert der CDU im Stadteil
+# Hier erhalten wir die Anzahl der Wahlbezirke pro Stadtteil und den Mittelwert der Parteien im Stadtteil
 
 clean_vote_konstanz_2016 %>% 
   group_by(Stadtteil) %>% 
-  summarise(obs = n(),
-            CDU_average = mean(D1_CDU))
+  summarise(obs = n(), # Anzahl der Beobachtungen pro Gruppe (Wahlbezirke pro Stadtteil)
+            CDU_average = mean(percentage_cdu), # Mittelwert über Wahlbezirkte im Stadtteil
+            Green_average = mean(percentage_greens),
+            AFD_average = mean(percentage_afd),
+            vote_pop = sum(Wahlberechtigte_insgesamt)) %>% 
+  arrange(desc(AFD_average)) # ohne desc wäre die Liste aufsteigend
 
 
 
 
 # Joinen der Datensätze ---------------------------------------------------
 
+# Oftmals müssen wir Informationen aus verschiedenen Quellen kombinieren um Forschung zu betreiben
+# und insights zu generieren. Daher müssen wir lernen, wie wir verschiedene Datensätze miteinander 
+# verbinden können.
 
+# Hier fragen wir uns beispielsweise, was mögliche Hintergründe der Wahl von bestimmten Parteien sind
+# Also suchen wir uns doch nach weiteren Informationen zu Konstanzer Stadtteilen
+
+# Wir können auch direkt Daten aus dem Internet einlesen 
+# Dafür übergeben wir als Dateipfad eine URL
+kita_kn <- read_delim("https://offenedaten-konstanz.de/sites/default/files/Kinderbetreuung%20nach%20Stadtteile%20M%C3%A4rz%202017.csv",
+           delim = ";")
+
+# Blick in die Daten zeigt einen Fehler in den Stadteilnamen
+# Dieses Mal wollen wir den Weg von Base R gehen
+
+kita_kn$STADTTEIL[8] <- "Fürstenberg" # Element in der achten Reihe der Variablen STADTTEIL wird überschrieben
+kita_kn$STADTTEIL[5] <- "Königsbau"
+
+# Wozu das ganze? 
+# Wir wollen die Information über KITAS zu den Wahldaten hinzufügen. Dafür brauchen 
+# wir einen "Schlüssel" in beiden Datensätzen. Also eine Variable die zwischen den
+# Datensätzen matchen kann. Diese Variable ist STADTTEIL (und Stadtteilnummer). 
+
+# Die Kombination von zwei Datensätzen heißt join. Dazu gibt es verschiedene 
+# Funktionen. Wir nutzen hier left_join() von dplyr
+
+clean_vote_konstanz_2016 %>% 
+  left_join(kita_kn, by = c("Stadtteil" = "STADTTEIL")) %>% View()
+
+# Sinnvollerweiße kombinieren wir aber unsere oben schon aufbereiteten Daten mit
+# den Kita Daten
+
+# Erstellen eines neuen Datensatzes
+kn_vote <- clean_vote_konstanz_2016 %>% 
+  group_by(Stadtteil) %>% 
+  summarise(obs = n(), # Anzahl der Beobachtungen pro Gruppe (Wahlbezirke pro Stadtteil)
+            CDU_average = mean(percentage_cdu), # Mittelwert über Wahlbezirkte im Stadtteil
+            Green_average = mean(percentage_greens),
+            AFD_average = mean(percentage_afd),
+            vote_pop = sum(Wahlberechtigte_insgesamt))
+
+# Kombination von vote und Kita Daten
+
+kn_analyze <- kn_vote %>% 
+                left_join(kita_kn, by = c("Stadtteil" = "STADTTEIL"))
+
+# Erstellen einer neuen Variablen KITA_GESAMT und einer Variable die Anteil an
+# Wahlbevölkerung zeigt. Außerdem hat Staad keinerlei Kitaplätze, deshalb entfernen wir
+# die Beobachtung
+
+kn_analyze %>% 
+  mutate(kita_gesamt = KITA_unter3 + KITA_3bis6 + KITA_SCHULKIND,
+         kita_prob = kita_gesamt/vote_pop) %>% 
+  filter(Stadtteil != "Staad")-> kn_analyze
 
 
 # Regressionen mit dem broom package --------------------------------------
+
+# Wir alle sind natürlich nicht umsonst durch Susumus Schule gegangen. 
+# We want some regression!!
+
+# Vielleicht könnten wir ja die Wahl der Grünen im Stadtbezirk mit der Anzahl an
+# Kitaplätzen im selben Stadtbezirk erklären
+
+# Please don't do this at home. Regression mit 14 Beobachtungen ist großer Schwachsinn und Teufelszeug!
+
+
+# Um einfach regression zu rechnen brauchen wir kein zusätzliches Package
+
+summary(lm(formula = Green_average ~ kita_prob, data = kn_analyze))
+summary(lm(formula = AFD_average ~ kita_prob, data = kn_analyze))
+
+lm(formula = AFD_average ~ kita_prob, data = kn_analyze) %>% 
+  broom::tidy()
