@@ -1,0 +1,76 @@
+Wahl;Datum;ags;Stadtteil_Nr;Stadtteil;Wahlbezirk_Nr;Wahlbezirk_Name;Wahlberechtigte_ohne_Sperrvermerk;Wahlberechtigte_mit_Sperrvermerk;Wahlberechtigung nach Ablauf der Antrags- oder Einsichtsfrist entstanden;Wahlberechtigte_insgesamt;Anzahl Stimmzettel / Anzahl WählerInnen;Anzahl WählerInnen mit Wahlschein;Wahlbeteiligung in Prozent;ungültige Stimmen;gültige Stimmen insgesamt;D1_CDU;D2_GRÜNE;D3_SPD;D4_FDP;D5_LINKE;D6_REP;D7_NPD;D8_ÖDP;D13_ALFA;D15_AfD;D22_Tierschutzpartei
+Landtagswahl;13.03.2016;8335043;10;Altstadt;1;Rathaus;697;209;0;906;441;3;62,8;2;439;67;244;45;19;28;0;0;4;4;22;6
+Landtagswahl;13.03.2016;8335043;10;Altstadt;2;Caritas Kindertagesstätte Arche I;659;212;0;871;418;1;63,3;3;415;54;210;60;30;30;0;0;1;3;23;4
+Landtagswahl;13.03.2016;8335043;10;Altstadt;3;Caritas Kindertagesstätte Arche II;574;189;0;763;391;1;67,9;5;386;62;181;50;39;19;0;0;2;2;25;6
+Landtagswahl;13.03.2016;8335043;10;Altstadt;4;Kinderhaus Paradies;603;182;0;785;419;0;69,5;2;417;52;222;61;25;23;0;0;2;3;26;3
+Landtagswahl;13.03.2016;8335043;10;Altstadt;5;Seniorenzentrum;690;256;0;946;457;2;65,9;3;454;68;238;56;32;23;0;0;1;3;23;10
+Landtagswahl;13.03.2016;8335043;10;Altstadt;6;Wallgutschule I;595;189;0;784;408;7;67,4;5;403;61;216;62;17;14;0;0;0;2;25;6
+Landtagswahl;13.03.2016;8335043;10;Altstadt;7;Wallgutschule II;608;173;0;781;366;0;60,2;1;365;61;179;51;25;26;0;0;0;0;14;9
+Landtagswahl;13.03.2016;8335043;10;Altstadt;8;Sozialgericht I;783;234;0;1017;562;0;71,8;4;558;104;276;72;30;33;0;0;2;3;34;4
+Landtagswahl;13.03.2016;8335043;10;Altstadt;9;Bürgersaal Vorraum;751;310;0;1061;466;3;61,7;1;465;78;218;68;39;24;0;0;7;2;25;4
+Landtagswahl;13.03.2016;8335043;10;Altstadt;10;Sozialgericht II;686;248;0;934;460;1;66,9;2;458;70;234;54;20;47;0;0;4;2;21;6
+Landtagswahl;13.03.2016;8335043;20;Paradies;11;Schänzlesporthalle I;981;385;0;1366;551;4;55,8;6;545;104;243;75;38;30;0;0;3;9;37;6
+Landtagswahl;13.03.2016;8335043;20;Paradies;12;Schänzlesporthalle II;826;256;0;1082;486;5;58,2;2;484;86;214;63;34;28;0;0;6;3;45;5
+Landtagswahl;13.03.2016;8335043;20;Paradies;13;Palmenhaus;822;258;0;1080;586;2;71,0;1;585;121;273;92;37;15;1;0;2;2;31;11
+Landtagswahl;13.03.2016;8335043;20;Paradies;14;Wallgutschule;777;237;0;1014;498;2;63,8;0;498;91;202;64;37;27;0;3;3;8;54;9
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;15;Treffpunkt Petershausen I;780;328;0;1108;437;2;55,8;3;434;70;199;60;35;31;1;0;4;5;21;8
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;16;Treffpunkt Petershausen II;798;266;0;1064;481;6;59,5;7;474;79;183;66;34;50;0;1;3;0;51;7
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;17;Treffpunkt Petershausen III;542;94;0;636;270;0;49,8;2;268;38;99;48;18;19;0;0;2;5;36;3
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;18;Kiga D. v. Flüe I;891;250;0;1141;542;6;60,2;3;539;83;238;76;27;33;0;1;5;6;57;13
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;19;Kiga D. v. Flüe II;834;166;0;1000;421;0;50,5;10;411;72;157;58;36;29;0;3;3;1;49;3
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;20;Zeppelin-Gewerbeschule I;990;343;0;1333;517;5;51,7;7;510;108;190;60;34;42;1;3;0;5;58;9
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;21;Kinderhaus Löwenzahn;1136;285;0;1421;728;5;63,6;5;723;148;279;105;54;41;1;1;5;2;75;12
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;22;Kinderkulturzentrum KIKUZ Raiteberg;743;187;0;930;449;3;60,0;2;447;87;184;65;42;19;0;0;3;1;39;7
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;23;Zeppelin-Gewerbeschule II;864;233;0;1097;464;3;53,4;3;461;69;195;69;31;31;1;1;1;4;48;11
+Landtagswahl;13.03.2016;8335043;30;Petershausen-West;24;Theodor-Heuss-Realschule;715;173;0;888;358;1;49,9;6;352;56;127;56;19;28;0;1;2;7;46;10
+Landtagswahl;13.03.2016;8335043;35;Petershausen-Ost;25;Sonnenhaldeschule;754;285;0;1039;554;3;73,1;3;551;119;253;66;34;19;0;1;1;6;48;4
+Landtagswahl;13.03.2016;8335043;35;Petershausen-Ost;26;Kinderhaus am Salzberg;696;211;0;907;353;2;50,4;2;351;53;157;56;23;15;0;3;2;2;36;4
+Landtagswahl;13.03.2016;8335043;35;Petershausen-Ost;27;Heinrich-Suso-Gymnasium I;824;332;0;1156;538;3;64,9;5;533;80;247;82;41;33;0;3;2;1;39;5
+Landtagswahl;13.03.2016;8335043;35;Petershausen-Ost;28;Heinrich-Suso-Gymnasium II;821;335;0;1156;550;7;66,1;5;545;124;227;61;68;16;0;0;1;5;38;5
+Landtagswahl;13.03.2016;8335043;35;Petershausen-Ost;29;Parkstift Rosenau;848;305;0;1153;627;8;73,0;3;624;178;201;74;84;15;0;1;0;5;58;8
+Landtagswahl;13.03.2016;8335043;40;Königsbau;30;Petrus-Kindergarten;838;79;0;917;351;1;41,8;6;345;41;106;60;15;21;0;1;3;2;89;7
+Landtagswahl;13.03.2016;8335043;40;Königsbau;31;Uni-Laborgebäude V;728;272;0;1000;394;4;53,6;3;391;60;163;52;26;38;1;1;0;5;37;8
+Landtagswahl;13.03.2016;8335043;40;Königsbau;32;Caritas-Zentrum Konradihaus I;747;267;0;1014;534;2;71,2;4;530;124;205;74;44;32;0;0;0;5;39;7
+Landtagswahl;13.03.2016;8335043;40;Königsbau;33;Caritas-Zentrum Konradihaus II;807;281;0;1088;516;4;63,4;6;510;100;220;62;39;26;0;3;1;5;44;10
+Landtagswahl;13.03.2016;8335043;50;Allmannsdorf;34;Caritas-Quartiermanagement;697;217;0;914;515;1;73,7;6;509;100;226;63;49;19;0;0;1;4;45;2
+Landtagswahl;13.03.2016;8335043;50;Allmannsdorf;35;Schule Allmannsdorf I;698;283;0;981;541;1;77,4;2;539;128;231;58;60;14;1;0;0;6;35;6
+Landtagswahl;13.03.2016;8335043;50;Allmannsdorf;36;Schule Allmannsdorf II;812;226;0;1038;512;8;62,1;7;505;95;229;58;34;28;0;1;0;8;40;12
+Landtagswahl;13.03.2016;8335043;50;Allmannsdorf;37;Schule Allmannsdorf III;820;313;0;1133;599;4;72,6;7;592;120;252;83;61;23;0;2;0;1;41;9
+Landtagswahl;13.03.2016;8335043;60;Staad;38;ARGE Sportboothafen;523;173;0;696;380;2;72,3;1;379;85;159;57;32;10;0;0;0;0;34;2
+Landtagswahl;13.03.2016;8335043;60;Staad;39;Gemeindezentrum Kreuzpfarrei;475;230;0;705;359;1;75,4;0;359;77;152;41;38;11;0;0;0;3;33;4
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;40;Treffpunkt Chérisy I;780;187;0;967;396;1;50,6;4;392;45;167;52;14;59;1;2;1;1;45;5
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;41;Treffpunkt Chérisy II;735;168;0;903;418;3;56,5;7;411;85;160;56;24;34;0;1;5;4;37;5
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;42;Berchenschule I;727;139;0;866;402;3;54,9;6;396;57;152;56;19;23;0;2;2;3;72;10
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;43;Berchenschule II;683;114;0;797;367;0;53,7;6;361;70;123;55;31;12;1;0;3;4;55;7
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;44;Berchenschule III;873;219;0;1092;483;1;55,2;10;473;99;166;77;33;26;0;1;0;5;55;11
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;45;Schule Wollmatingen;741;227;0;968;484;0;65,3;4;480;115;190;66;38;22;0;0;2;3;41;3
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;46;Haidelmoos-Schule I;888;314;0;1202;539;3;60,4;8;531;105;179;97;40;21;0;1;6;9;67;6
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;47;Haidelmoos-Schule II;716;202;0;918;426;1;59,4;2;424;62;155;76;24;26;1;2;2;2;66;8
+Landtagswahl;13.03.2016;8335043;70;Fürstenberg;48;Haidelmoosschule III;700;174;0;874;483;9;67,7;8;475;77;208;68;33;29;0;1;1;4;49;5
+Landtagswahl;13.03.2016;8335043;80;Wollmatingen;49;Regenbogenschule I;868;148;0;1016;409;2;46,9;3;406;65;152;49;26;25;2;0;3;6;73;5
+Landtagswahl;13.03.2016;8335043;80;Wollmatingen;50;Regenbogenschule II;561;130;0;691;285;0;50,8;4;281;50;103;39;11;12;2;0;3;1;54;6
+Landtagswahl;13.03.2016;8335043;80;Wollmatingen;51;Kindergarten St. Martin;678;184;0;862;463;0;68,3;4;459;96;196;51;39;21;0;1;3;2;44;6
+Landtagswahl;13.03.2016;8335043;80;Wollmatingen;52;Kindergarten Urisberg I;867;259;0;1126;528;4;60,4;4;524;117;207;53;43;25;1;2;5;6;57;8
+Landtagswahl;13.03.2016;8335043;80;Wollmatingen;53;Kindergarten Urisberg II;662;180;0;842;415;0;62,7;3;412;90;175;53;35;15;0;0;1;8;32;3
+Landtagswahl;13.03.2016;8335043;90;Industriegebiet;54;Stadtwerke-Verwaltungsgebäude;478;116;0;594;209;3;43,1;3;206;43;73;26;14;13;0;1;1;4;28;3
+Landtagswahl;13.03.2016;8335043;100;Egg;55;Limnologisches Institut der Universität;391;149;0;540;312;1;79,5;0;312;68;138;28;24;18;0;0;2;2;29;3
+Landtagswahl;13.03.2016;8335043;110;Litzelstetten;56;Schule Litzelstetten Gymnastikhalle;519;198;0;717;387;2;74,2;0;387;83;166;38;46;12;0;2;0;4;31;5
+Landtagswahl;13.03.2016;8335043;110;Litzelstetten;57;Pfarrgemeindezentrum Peter und Paul I;513;181;0;694;360;1;70,0;0;360;96;135;45;40;7;0;0;0;4;33;0
+Landtagswahl;13.03.2016;8335043;110;Litzelstetten;58;Pfarrgemeindezentrum Peter und Paul II;590;186;0;776;413;3;69,5;3;410;93;155;64;38;15;1;0;3;2;37;2
+Landtagswahl;13.03.2016;8335043;110;Litzelstetten;59;Ortsverwaltung Litzelstetten;561;239;0;800;393;0;70,1;1;392;74;144;54;61;19;0;1;2;3;31;3
+Landtagswahl;13.03.2016;8335043;120;Dingelsdorf;60;Kernzeitbetreuung Grundschule I;531;190;0;721;401;3;75,0;1;400;81;162;43;44;16;0;0;2;3;41;8
+Landtagswahl;13.03.2016;8335043;120;Dingelsdorf;61;Kernzeitbetreuung Grundschule II;668;250;0;918;486;2;72,5;4;482;125;198;47;26;17;0;2;0;4;56;7
+Landtagswahl;13.03.2016;8335043;130;Dettingen;62;Schule Dettingen I;578;216;0;794;405;1;69,9;4;401;103;147;55;34;13;0;0;2;6;36;5
+Landtagswahl;13.03.2016;8335043;130;Dettingen;63;Schule Dettingen II;653;163;0;816;452;3;68,8;3;449;101;173;60;38;18;0;1;1;0;50;7
+Landtagswahl;13.03.2016;8335043;130;Dettingen;64;Schule Dettingen III;625;165;0;790;435;0;69,6;1;434;94;170;69;27;13;1;1;0;3;51;5
+Landtagswahl;13.03.2016;8335043;140;Wallhausen;65;Kindergarten Wallhausen;677;214;0;891;456;5;66,6;0;456;99;184;42;40;18;0;0;4;2;62;5
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B66;Briefwahl Altstadt 1;0;0;0;0;2086;2086;0;7;2079;382;978;238;193;104;0;0;21;22;119;22
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B67;Briefwahl Paradies;0;0;0;0;1042;1042;0;7;1035;255;467;119;69;41;0;1;6;7;58;12
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B68;Briefwahl Petershausen-West;0;0;0;0;2140;2140;0;13;2127;385;915;278;155;137;0;1;22;32;160;42
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B69;Briefwahl Petershausen-Ost;0;0;0;0;1347;1347;0;4;1343;298;526;171;164;31;1;5;8;11;120;8
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B70;Briefwahl Königsbau;0;0;0;0;837;837;0;5;832;176;328;107;81;38;3;3;9;9;62;16
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B71;Briefwahl Allmannsdorf-Staad-Egg;0;0;0;0;1486;1486;0;2;1484;347;619;145;173;45;2;0;13;18;107;15
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B72;Briefwahl Fürstenberg;0;0;0;0;1621;1621;0;0;1621;393;645;228;119;73;0;3;3;20;116;21
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B73;Briefwahl Wollmatingen-Industrieg.;0;0;0;0;934;934;0;3;931;222;343;107;90;43;1;3;11;11;84;16
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B74;Briefwahl Litzelstetten-Dingelsdorf;0;0;0;0;1194;1194;0;2;1192;310;393;151;136;31;0;2;9;21;125;14
+Landtagswahl;13.03.2016;8335043;.;Briefwahl;B75;Briefwahl Dettingen-Wallhausen;0;0;0;0;696;696;0;1;695;169;249;100;62;16;0;2;4;8;69;16

@@ -178,20 +178,22 @@ add("hey ", "du") # das hier auch
 # Eigene Funktionen - advanced 1 -----------------------------------------------
 
 # Vanhanen's Polyarchy Dataset
-vanhanen <- function(vote_share, participation) {
-  contestation <- 100 - vote_share
-  final_index <- (contestation * participation)/100
+vanhanen <- function(vote_share, participation, population) {
+  absolte_voters <- participation * population
+  P <- absolte_voters/population * 100
+  C <- 100 - vote_share
+  final_index <- (C * P)/100
   return(final_index)
 }
 
 # TODO: sinvolle werte
 # Jetzt können wir einfach den index berechnen ohne immer alles zu tippen, es reicht:
-vanhanen(60, 40)
-
+vanhanen(32.9, 0.76, 83.6)
+vanhanen(53.08, 0.51, 10.01)
 
 # Eigene Funktionen - advanced 2 -----------------------------------------------
+# wir können es auch komplizierter machen, auch wenn nicht sinnvoll
 
-#
 round(mean(add(vanhanen(60, 40), vanhanen(80, 60)))*99.99, digits = 2)
 
 # für mehr übersicht können wir es auch in mehrere Zeilen schreiben
@@ -210,6 +212,3 @@ round(
 # (1)
 # Definiere einen Vektor mit 5 Integeres
 # Schreibe eine Funktion, die das letzte Element zurückgibt
-
-
-

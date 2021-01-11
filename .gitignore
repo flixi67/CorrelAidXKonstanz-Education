@@ -41,3 +41,4 @@ vignettes/*.pdf
 # Mac Environment files
 .DS_Store
 .DS_Store?
+*.html
