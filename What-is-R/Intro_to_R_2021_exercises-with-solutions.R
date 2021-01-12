@@ -40,5 +40,3 @@ beste_bewertung <- function() {
   return(liste[[1]][index])
 }
 beste_bewertung()
-
-# Übung 2 -------------------------------------------------------------------
