@@ -13,8 +13,8 @@
 ## ---------------------------
 ##
 ## Notes:
-##
-##
+## A fallback version on google colab can be found here:
+## https://colab.research.google.com/drive/1POvIG0TvqK-2XpWJqvcZpNNkytMnDnu2?usp=sharing
 ## ---------------------------
 
 
@@ -146,7 +146,8 @@ sample(wuerfel) # ändert die reihenfolge der elemente im würfel
 wuerfel <- sample(wuerfel)
 wuerfel
 
-# wenn wir nur eine zufällige Zahl aus unserem Würfel haben wollen können wir den parameter size mit dem wert 1 hinzufügen
+# wenn wir nur eine zufällige Zahl aus unserem Würfel haben wollen können wir 
+# den parameter size mit dem wert 1 hinzufügen
 sample(wuerfel, size = 1)
 
 # was genau es alles für funktionen gibt & was für parameter die haben findet ihr
@@ -160,7 +161,8 @@ sample(wuerfel, size = 1)
 # Wir können unsere eigene simple Additions-funktion definieren:
 
 add <- function(a,b) {  # das hier ist der Kopf der Funktion, "add" ist der name, mit dem wir die fkt. später aufrufen können
-                        # in den klammern von function() können wir parameter bestimmen, für die addition brauchen wir 2, die können wir nennen wie wir wollen
+                        # in den klammern von function() können wir parameter bestimmen, für die addition brauchen wir 2, 
+                        # die können wir nennen wie wir wollen
   return(a+b)           # alles zwischen den Klammern wird der Rumpf genannt,
                         # mit dem return() geben wir das ergbenis der berechnung zurück um es später wiederverwenden zu können
 }
