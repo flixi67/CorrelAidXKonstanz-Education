@@ -4,7 +4,7 @@
 ##
 ## Purpose of script: Script to show basic usage of R
 ##
-## Author: Felix Kube
+## Author: Philipp Bosch & Felix Kube
 ##
 ## Date Created: 2021-01-09
 ##
