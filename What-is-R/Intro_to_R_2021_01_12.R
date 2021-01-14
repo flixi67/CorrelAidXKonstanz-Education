@@ -13,8 +13,8 @@
 ## ---------------------------
 ##
 ## Notes:
-##
-##
+## A fallback version on google colab can be found here:
+## https://colab.research.google.com/drive/1POvIG0TvqK-2XpWJqvcZpNNkytMnDnu2?usp=sharing
 ## ---------------------------
 
 
@@ -134,19 +134,20 @@ cor(vector1, vector2) # berechne die correlation zweier vektoren
 # es geht schwieriger
 vector1 <- c(12,42,132,5312,43,212,23,32,123)
 vector2 <- c(46,123,365,213,59,3421,73,134,7)
-cor(vector1, vector2)
+c <- cor(vector1, vector2)
 
 round(wurzel, digits = 1)
 # es sind auch verschachtelungen von funktionen möglich:
 round(sqrt(35), digits = 1) # ist das selbe wie 2 Zeilen weiter oben
 
 wuerfel <- c(1:6)
-sample(wuerfel) # ändert die reihenfolge der elemente im würfel
+sample(wuerfel) #  ändert die reihenfolge der elemente im würfel
 # damit die änderungen aber auch persitent sind müssen wir das ergebnis wieder in der wuerfel varibale speichern:
-wuerfel <- sample(wuerfel)
-wuerfel
+sample_x <- sample(wuerfel)
+sample_x
 
-# wenn wir nur eine zufällige Zahl aus unserem Würfel haben wollen können wir den parameter size mit dem wert 1 hinzufügen
+# wenn wir nur eine zufällige Zahl aus unserem Würfel haben wollen können wir 
+# den parameter size mit dem wert 1 hinzufügen
 sample(wuerfel, size = 1)
 
 # was genau es alles für funktionen gibt & was für parameter die haben findet ihr
@@ -160,7 +161,8 @@ sample(wuerfel, size = 1)
 # Wir können unsere eigene simple Additions-funktion definieren:
 
 add <- function(a,b) {  # das hier ist der Kopf der Funktion, "add" ist der name, mit dem wir die fkt. später aufrufen können
-                        # in den klammern von function() können wir parameter bestimmen, für die addition brauchen wir 2, die können wir nennen wie wir wollen
+                        # in den klammern von function() können wir parameter bestimmen, für die addition brauchen wir 2, 
+                        # die können wir nennen wie wir wollen
   return(a+b)           # alles zwischen den Klammern wird der Rumpf genannt,
                         # mit dem return() geben wir das ergbenis der berechnung zurück um es später wiederverwenden zu können
 }
@@ -186,7 +188,6 @@ vanhanen <- function(vote_share, participation, population) {
   return(final_index)
 }
 
-# TODO: sinvolle werte
 # Jetzt können wir einfach den index berechnen ohne immer alles zu tippen, es reicht:
 vanhanen(32.9, 0.76, 83.6)
 vanhanen(53.08, 0.51, 10.01)
@@ -194,7 +195,7 @@ vanhanen(53.08, 0.51, 10.01)
 # Eigene Funktionen - advanced 2 -----------------------------------------------
 # wir können es auch komplizierter machen, auch wenn nicht sinnvoll
 
-round(mean(add(vanhanen(60, 40), vanhanen(80, 60)))*99.99, digits = 2)
+  round(mean(add(vanhanen(32.9, 0.76, 83.6), vanhanen(53.08, 0.51, 10.01)))*99.99, digits = 2)
 
 # für mehr übersicht können wir es auch in mehrere Zeilen schreiben
 round(

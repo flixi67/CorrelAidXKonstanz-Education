@@ -30,6 +30,3 @@
 # Bonus: Schreibe eine Funktion, die nur das Obst mit der besten Bewertung zurück gibt.
 #        Mit der Funktion which.max() kannst du die Position der größten Zahl eines Vektors bestimmen
 #        Die Elemente in Listen abzurufen ist etwas tricky. Probiere ruhig etwas rum.
-
-# Übung 2 ----------------------------------------------------------------
-# 

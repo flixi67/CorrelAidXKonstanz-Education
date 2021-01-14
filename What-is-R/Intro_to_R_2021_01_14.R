@@ -4,7 +4,7 @@
 ##
 ## Purpose of script: Script to show basic usage of R
 ##
-## Author: Felix Kube
+## Author: Philipp Bosch & Felix Kube
 ##
 ## Date Created: 2021-01-09
 ##
@@ -114,8 +114,8 @@ filter(clean_vote_konstanz_2016, Wahlberechtigte_insgesamt > 800)
 filter(clean_vote_konstanz_2016, Stadtteil == 'Altstadt' | Stadtteil == 'Petershausen-West' |
          Stadtteil == 'Staad')
 
-# Elegantere Lösung
-filter(df, Stadtteil %in% c('Altstadt', 'Petershausen-West', 'Staad'))
+# Elegantere Lösung (!!! Error in inital script !!!)
+filter(clean_vote_konstanz_2016, Stadtteil %in% c('Altstadt', 'Petershausen-West', 'Staad'))
 
 
 # der Pipe Operator %>% ---------------------------------------------------
