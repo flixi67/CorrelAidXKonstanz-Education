@@ -43,9 +43,9 @@ penguins <- penguins
 # Lösche Beobachtungen heraus, die bei einer der Variablen "NA", alo unbekannt, angegeben hat.
 
 # Regressiere für jede Species die Länge des Schnabels (Bill!) auf die Länge der Schwimmflossen (flipper!) und Kontrolliere für Jahr und Geschlecht
-# Haben Pinguine mit langen Schwimmflossen einen Größeren?
+# Haben Pinguine mit langen Schwimmflossen einen größeren Schnabel?
 # Tipp: lm(abhängig ~ unabhängig + unabhängig + kontroll + kontroll)
 
-# Lass die Kontrollvariable für da Jahr weg. Merkst du einen großen Unterschied? Was heißt das?
+# Lass die Kontrollvariable für das Jahr weg. Merkst du einen großen Unterschied? Was heißt das?
 
 # Schaue dir die Hilfe für ?lm() an. Gäbe es eine Möglichkeit, auch hier die NAs auszuschließen? (Wir haben ja bereits oben gefiltert)
