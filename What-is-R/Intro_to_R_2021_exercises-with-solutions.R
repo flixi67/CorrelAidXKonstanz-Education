@@ -73,7 +73,7 @@ which(is.na(penguins))
 which(is.na(smol_penguins)) # Yay alle NAs weg
 
 # Regressiere für jede Species die Länge des Schnabels (Bill!) auf die Länge der Schwimmflossen (flipper!) und Kontrolliere für Jahr und Geschlecht
-# Haben Pinguine mit langen Schwimmflossen einen Größeren?
+# Haben Pinguine mit langen Schwimmflossen einen größeren Schnabel?
 # Tipp: lm(abhängig ~ unabhängig + unabhängig + kontroll + kontroll)
 smol_penguins %>%
   filter(species == "Adelie") %>%
@@ -95,7 +95,7 @@ smol_penguins %>%
 # Bei allen Sorten haben Männchen zw. 2 undd 3mm mehr Schnabel als Weibchen.
 
 
-# Lass die Kontrollvariable für da Jahr weg. Merkst du einen großen Unterschied? Was heißt das?
+# Lass die Kontrollvariable für das Jahr weg. Merkst du einen großen Unterschied? Was heißt das?
 smol_penguins %>%
   filter(species == "Gentoo") %>%
   lm(bill_length_mm ~ flipper_length_mm + sex, data = .) %>%
