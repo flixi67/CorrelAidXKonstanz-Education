@@ -10,3 +10,5 @@ Scripts and resources for our workshops.
   ## Easiest way to access material
   - Just dowload the zipped files by clicking [here](https://github.com/flixi67/CorrelAidXKonstanz-Education/archive/main.zip)
   - Aferwards just unzip the file into the folder where you store R stuff on your own computer
+
+![CorrelAid X Konstanz Header](https://github.com/flixi67/CorrelAidXKonstanz-Education/blob/main/header.png?raw=true)
