@@ -2,4 +2,11 @@
 Scripts and resources for our workshops.
 
 ## What is R? (in German)
-Slides: [PDF-Version](What-is-R/slides/Workshop_What is R_CorrelAid.pptx.pdf)
+- Material regarding the two workshops given in January 2021 can be found [here](What-is-R)
+  - Slides: can be found in the [slides](What-is-R/slides/) folder
+  - Script: in the same [folder](What-is-R) as the R-Project
+  - Data: can be found [here](What-is-R/data/)
+  
+  ## Easiest way to access material
+  - Just dowload the zipped files by clicking [here](https://github.com/flixi67/CorrelAidXKonstanz-Education/archive/main.zip)
+  - Aferwards just unzip the file into the folder where you store R stuff on your own computer
