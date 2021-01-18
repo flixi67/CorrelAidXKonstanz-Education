@@ -2,14 +2,5 @@
 Scripts and resources for our workshops.
 
 ## What is R? (in German)
-Presentation: https://docs.google.com/presentation/d/1QM-rfjhQVaIBUEwAax1FF0EzQ3o1IZQX
+Slides: [This is a relative link to a nested file](CorrelAidXKonstanz-Education/What-is-R/slides/Workshop_What is R_CorrelAid.pptx.pdf)
 
-Outline:
-- Was ist CorrelAid?
-- Beispiele für R-Projekte
-- IDE & .rproj
-- Basics (Zuweisungen, Datentypen, Vektoren, r basic functions)+
-- eigene Funktionen schreiben
--------
-- working directory, relative und absolute Pfade
-- ...
