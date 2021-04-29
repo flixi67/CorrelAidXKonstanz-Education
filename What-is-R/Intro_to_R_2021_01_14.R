@@ -145,7 +145,7 @@ clean_vote_konstanz_2016 %>%
 
 # dplyr - mutate ----------------------------------------------------------
 
-# Bei genauerem Hinsehen bemerken wir einen Fehl in der Variable 'Wahlbeteiligung in Prozent'
+# Bei genauerem Hinsehen bemerken wir einen Fehler in der Variable 'Wahlbeteiligung in Prozent'
 # Mutate hilft uns neue Variablen auf Basis von gegebenen Variablen zu erstellen 
 
 clean_vote_konstanz_2016 %>% 
