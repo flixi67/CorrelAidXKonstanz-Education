@@ -244,3 +244,6 @@ unterdurchschnittlich <- function(XXX) {
 ## ( o.o )
 ##  > ^ <
 
+# Für morgen noch diese Zeile ausführen! Könnte etwas dauern, da ihr Packages installiert
+
+source(file = "install_packages.R") # source spielt einfach das komplette Skript ab

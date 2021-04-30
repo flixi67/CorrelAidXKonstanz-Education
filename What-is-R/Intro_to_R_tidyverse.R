@@ -40,7 +40,7 @@ source(file = "install_packages.R") # source spielt einfach das komplette Skript
 # als auch R gut arbeiten können ist .csv (comma-seperated values)
 
 vote_konstanz_2016 <- readr::read_csv("data/LTW_2016_Konstanz_Stadtteile.csv")
-# read delim ist eine generalisierte version von read_csv
+
 
 # Um einen Überblick zu bekommen, hilft es sich die Daten anzusehen
 
@@ -290,9 +290,9 @@ kn_analyze <- clean_vote_konstanz_2016 %>%
             CDU_average = mean(percentage_cdu),
             Green_average = mean(percentage_greens),
             AFD_average = mean(percentage_afd),
-            #Linke_average = mean(percentage_linke),
-            #SPD_average = mean(percentage_spd),
-            #FDP_average = mean(percentage_fdp),
+            Linke_average = mean(percentage_linke),
+            SPD_average = mean(percentage_spd),
+            FDP_average = mean(percentage_fdp),
             vote_pop = sum(Wahlberechtigte_insgesamt),
             kita_prop = kita/vote_pop) %>% 
   filter(Stadtteil != "Staad")
