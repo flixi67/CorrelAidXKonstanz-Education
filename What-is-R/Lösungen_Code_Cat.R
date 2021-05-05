@@ -6,6 +6,64 @@
 ## ( o.o )
 ##  > ^ <
 
+# Erstelle eine Liste, die die folgenden Elemente enthält
+# Einen Integer-Vektor mit den Zahlen 0 bis 10
+# Einen Numeric Vektor mit deinem Alter, deiner Größe (in m) und der Anzahl deiner Persönlichkeiten
+# Einen Charakter-Vektor mit den Worten "Correlaid" "ist" "sau" "cool!"
+
+listy_list <- list(c(0:10), c(22, 1.92, 3), c("Correlaid", "ist", "sau", "cool!"))
+
+# Indiziere (wähle aus) deine Größe und gib sie in cm an
+
+listy_list[[2]][2] * 100
+
+# Berechne, wieviel du pro Lebensjahr gewachsen bist
+
+listy_list[[2]][2] * 100 / listy_list[[2]][1]
+
+# Lass R sagen, dass Correlaid sau cool ist! (Gib den Charakter-Vektor aus)
+
+listy_list[[3]]
+
+# Für Experten: füge der Liste deine Vor- und Nachnamen an
+
+listy_list[[4]] <- c("Marie", "Johanna", "Dübel")
+
+##  /\_/\
+## ( o.o )
+##  > ^ <
+
+# Code Cat! ---------------------------------------------------------------
+
+##  /\_/\
+## ( o.o )
+##  > ^ <
+
+# Schreibe eine Funktion, die das letzte Element eines Vektors zurückgibt
+
+last <- function(input) {
+  return(input[length(input)])
+}
+
+# Schreibe eine Funktion, die alle Elemente eines Vektors, die kleiner als der
+# Durchschnitt sind, zurückgibt
+
+unterdurchschnittlich <- function(input) {
+  kleiner <- input < mean(input)
+  return(input[kleiner])
+}
+
+##  /\_/\
+## ( o.o )
+##  > ^ <
+
+
+# Code Cat! ---------------------------------------------------------------
+
+##  /\_/\
+## ( o.o )
+##  > ^ <
+
 # Beschränke den Datensatz 'vote_konstanz_2016' auf die Variablen 'Wahl', 'Stadtteil_Nr', 'Stadtteil',
 # 'Wahlberechtigte_insgesamt' und 'ags' und weise das Ergebnis dem Objekt 'small_dataframe' zu
 
