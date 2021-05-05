@@ -40,3 +40,68 @@ beste_bewertung <- function() {
   return(liste[[1]][index])
 }
 beste_bewertung()
+
+# Übung 2 ----------------------------------------------------------------------
+# Übungsdaten installieren (Pinguine!!!)
+install.packages("palmerpenguins")
+library(palmerpenguins)
+library(tidyverse)
+penguins <- penguins
+# Benutze die Funktionen head() und View() um dir einen Überblick über die Daten zu verschaffen
+head(penguins)
+View(penguins)
+glimpse(penguins) # Bonus
+str(penguins) # Bonus
+names(penguins) # Bonus
+
+# Reduziere das Datenset auf die uns interessierenden Variablen "sex", "flipper_length_mm", "year", "bill_length_mm" und "species"
+# Lösche Beobachtungen heraus, die bei einer der Variablen "NA", alo unbekannt, angegeben hat.
+smol_penguins <- penguins %>%
+  select(flipper_length_mm, sex, year, bill_length_mm, species) %>%
+  filter(sex != "NA", year != "NA", bill_length_mm != "NA", species != "NA", flipper_length_mm != "NA")
+
+more_smol_penguins <- penguins %>%
+  select(flipper_length_mm, sex, year, bill_length_mm, species) %>%
+  filter(!is.na(sex), !is.na(year), !is.na(bill_length_mm), !is.na(species), !is.na(flipper_length_mm))
+
+even_more_smol_penguins <- penguins %>%
+  select(flipper_length_mm, sex, year, bill_length_mm, species) %>%
+  drop_na() # Bonus: tidyr offers a function for this
+
+# Check ob NAs da
+which(is.na(penguins))
+which(is.na(smol_penguins)) # Yay alle NAs weg
+
+# Regressiere für jede Species die Länge des Schnabels (Bill!) auf die Länge der Schwimmflossen (flipper!) und Kontrolliere für Jahr und Geschlecht
+# Haben Pinguine mit langen Schwimmflossen einen größeren Schnabel?
+# Tipp: lm(abhängig ~ unabhängig + unabhängig + kontroll + kontroll)
+smol_penguins %>%
+  filter(species == "Adelie") %>%
+  lm(bill_length_mm ~ flipper_length_mm + year + sex, data = .) %>% # wir müssen angeben, wo wir das Datenset aus der Pipe angeben (mit dem .)
+  summary()                                                         # normalerweise wird das Argument als erstes in die Funktion weitergegeben
+
+smol_penguins %>%
+  filter(species == "Gentoo") %>%
+  lm(bill_length_mm ~ flipper_length_mm + year + sex, data = .) %>%
+  summary() 
+
+smol_penguins %>%
+  filter(species == "Chinstrap") %>%
+  lm(bill_length_mm ~ flipper_length_mm + year + sex, data = .) %>%
+  summary() 
+
+# Die Arten unterscheiden sich! Bei Gentoo Pinguinen ist der Zusammenhang am größten und signifikantesten!
+# Für jeden Millimeter mehr Flosse haben die Gentoo Pinguine 0,18mm mehr Schnabel
+# Bei allen Sorten haben Männchen zw. 2 undd 3mm mehr Schnabel als Weibchen.
+
+
+# Lass die Kontrollvariable für das Jahr weg. Merkst du einen großen Unterschied? Was heißt das?
+smol_penguins %>%
+  filter(species == "Gentoo") %>%
+  lm(bill_length_mm ~ flipper_length_mm + sex, data = .) %>%
+  summary() 
+# Der Unterschied ist gering, aber vorhanden. Unsere Pinguin-Theorie müsste uns sagen, ob wir auf das Jahr kontrollieren!
+
+# Schaue dir die Hilfe für ?lm() an. Gäbe es eine Möglichkeit, auch hier die NAs auszuschließen? (Wir haben ja bereits oben gefiltert)
+?lm()
+# Standardmäßig lässt lm() die NAs weg (nachzulesen unter Arguments > na.action), da es eine globale Option ist, die man auch ändenr kann, lieber NAs rausfiltern =)
